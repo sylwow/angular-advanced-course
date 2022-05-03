@@ -2,39 +2,78 @@
   <ul class="top-menu disable-link-styles">
     <li class="logo-small-container">
       <a class="v-center-block-parent">
-        <img class="v-center-block logo-small angular-university-logo"
-             src="https://angular-academy.s3.amazonaws.com/main-logo/main-page-logo-small-hat.png"
-             data-pin-nopin="true">
-
+        <img
+          class="v-center-block logo-small angular-university-logo"
+          src="https://angular-academy.s3.amazonaws.com/main-logo/main-page-logo-small-hat.png"
+          data-pin-nopin="true"
+        />
       </a>
     </li>
     <li>
       <a>Inputs</a>
     </li>
   </ul>
-
 </header>
 
 <body>
-<div class="container">
-  <h1>Font Awesome</h1>
+  <div class="container">
+    <h1>Font Awesome</h1>
 
-<div class="form">
+    <div class="form">
+      <div class="form-row">
+        <label>FA Input:</label>
+        <input
+          class="normal-input"
+          type="email"
+          name="email"
+          placeholder="Email"
+        />
+      </div>
+    </div>
 
-  <div class="form-row">
-      <label>Normal Input:</label>
-      <input class="normal-input" type="email" name="email" placeholder="E-mail">
+    <div class="form">
+      <div class="form-row">
+        <label>FA Input:</label>
+        <au-fa-input icon="envelope">
+          <input
+            class="normal-input"
+            type="email"
+            name="email"
+            placeholder="Email"
+          />
+        </au-fa-input>
+      </div>
+      <div class="form-row">
+        <label>FA Email:</label>
+        <au-fa-input icon="envelope">
+          <input
+            class="normal-input"
+            type="email"
+            name="email"
+            placeholder="Email"
+          />
+        </au-fa-input>
+      </div>
+      <div class="form-row">
+        <label>FA Password:</label>
+        <au-fa-input icon="envelope">
+          <input
+            class="normal-input"
+            type="email"
+            name="email"
+            placeholder="Password"
+        /></au-fa-input>
+      </div>
+      <div class="form-row">
+        <label>FA Paypal:</label>
+        <au-fa-input icon="envelope">
+          <input
+            class="normal-input"
+            type="email"
+            name="email"
+            placeholder="Email"
+        /></au-fa-input>
+      </div>
+    </div>
   </div>
-
-</div>
-
-
-
-
-
-
-
-</div>
-
 </body>
-
