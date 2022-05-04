@@ -1,0 +1,1 @@
+export { AuInputModule } from './src/app/lib/au-fa-input.module'
