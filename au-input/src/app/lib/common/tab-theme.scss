@@ -1,3 +1,40 @@
-.tab-pannel {
-    box-shadow: ;
+.tab-panel {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+
+    box-shadow: 0 0 10px black;
+    .tab-panel-buttons {
+        display: flex;
+        list-style: none;
+        text-align: left;
+        margin-bottom: 0;
+        padding: 7px 0 0 10px;
+        background-color: rgb(68, 167, 197);
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        align-items: flex-end;
+
+        li {
+            flex: 1 0 auto;
+            display: inline-block;
+            color: white;
+            background-color: rgb(161, 210, 223);
+            padding: 2px 20px;
+            cursor: pointer;
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+            margin-right: 5px;
+
+            &.selected {
+                background-color: white;
+                color: black;
+
+            }
+        }
+    }
+
+
 }

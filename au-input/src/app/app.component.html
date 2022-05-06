@@ -17,38 +17,37 @@
 
 <body>
   <div class="container">
-    <au-tab-panel>
+    <ng-template #headderButtons let-tabs="tabs"
+      ><ul class="tab-panel-buttons" *ngIf="tabs">
+        <li
+          (click)="tabPanel.selectTab(tab)"
+          [class.selected]="tab.selected"
+          *ngFor="let tab of tabs"
+        >
+          {{ tab.title }}
+        </li>
+      </ul>
+    </ng-template>
+
+    <!-- <au-tab-panel #tabPanel [headerTemplate]="headderButtons"> -->
+    <au-tab-panel #tabPanel>
       <au-tab title="login">
         <form>
-          <div class="form-field">
-            <label> Email</label>
-          </div>
-          <div class="form-field">
-            <label> Password</label>
-          </div>
+          <div class="form-field"><label> Email</label><input /></div>
+          <div class="form-field"><label> Password</label><input /></div>
         </form>
       </au-tab>
       <au-tab title="Sign up">
         <form>
-          <div class="form-field">
-            <label> Email</label>
-          </div>
-          <div class="form-field">
-            <label> Password</label>
-          </div>
-          <div class="form-field">
-            <label>Confirm Password</label>
-          </div>
+          <div class="form-field"><label> Email</label><input /></div>
+          <div class="form-field"><label> Password</label><input /></div>
+          <div class="form-field"><label>Confirm Password</label><input /></div>
         </form>
       </au-tab>
       <au-tab title="Contact">
         <form>
-          <div class="form-field">
-            <label> Email</label>
-          </div>
-          <div class="form-field">
-            <label> Message</label>
-          </div>
+          <div class="form-field"><label> Email</label><input /></div>
+          <div class="form-field"><label> Message</label><input /></div>
         </form>
       </au-tab>
     </au-tab-panel>
