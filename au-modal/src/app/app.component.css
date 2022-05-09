@@ -4,6 +4,10 @@
   padding-top: 65px;
 }
 
+:ng-deep .auth-modal .modal-body {
+  min-width: 300px;
+}
+
 label {
   width: 100px;
   text-align: right;
